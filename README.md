@@ -14,14 +14,7 @@ We identified the following information in our initial analysis of the dataframe
 1. On average, Store 21980 is showing extremely high diesel sales relative to other stores. We also see that store 22260 has the highest unleaded sales and store 22085 has the highest inside sales. Interestingly, food services sales is very low for all stores and relative to other sales metrics.
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/cfbcc3df-6e55-486d-9e37-5a366fd4ae34)
 
-2. Dataframes are as follows:
-Qualitative: (37, 55)
-
-time_series: (13,908, 12)
-
-Time_Series data includes daily sales data for 37 unique sites with sales date ranging 1/12/2021 - 8/16/2023.
-
-3. Sales trends over time
+2. Sales trends over time
 In our time-series, Maverik experiences higher diesel and unleaded sales in the Summer. Total food service sales do not experience any seasonality trend - sales remain flat throughout the time series. The sales by month and sales by week charts show similar trends.
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/9c1dd2cf-e4bc-405f-8abd-bc44e2f65027)
 
