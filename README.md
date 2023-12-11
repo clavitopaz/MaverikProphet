@@ -82,7 +82,7 @@ The results are a model that produces daily forecasts for each sales metric for 
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/afaea07b-3f9c-46f6-8c98-92b1acae23d1)
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/4a6075c3-ed8b-474e-ba2b-f52c263b0506)
 
-# [Presentation of Results](https://github.com/clavitopaz/MaverikProphet/MaverikSlides.pdf) 
+# [Presentation of Results](https://clavitopaz.github.io/MaverikProphet/MaverikSlides.pdf) 
 We can see that the Prophet Rolling Forecast model beats Maverik's benchmark by an average 73% reduction in prediction error. Adopting this model would result in more accurate predictions, improved supply chain management and more accurate initial ROI estimates.
 ![image](https://clavitopaz.github.io/MaverikProphet/results.png)
 
