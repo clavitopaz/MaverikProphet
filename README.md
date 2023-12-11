@@ -8,7 +8,7 @@ This is a supervised regression problem where the predictors involve both catego
 
 The deliverable is a predictive model that produces daily sales forecasts for each sales metric. This model considers store features, seasonality, as well as having capability to process new data and re-forecast. This project was executed by Biva Sherchan, Roman Brock, Bhoomika John Pedely and Pablo Zarate.
 
-# [Exploratory Data Analysis](https://github.com/clavitopaz/MaverikProphet/blob/main/Final_Maverik_EDA%20(1).ipynb)
+# [Exploratory Data Analysis](https://clavitopaz.github.io/MaverikProphet/Final_Maverik_EDA_v3.html)
 We identified the following information in our initial analysis of the dataframes provided to us by Maverik:
 
 **1. Store 21980 Sales**
