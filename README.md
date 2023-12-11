@@ -45,3 +45,19 @@ These features can be removed as they only have one data value: Front door, god_
 The first column for each dataset has a 'count' for each row in the datasets. This can be removed.
 
 Store 21980 will also be removed for modeling due to its exceptionally high diesel sales.
+
+# Initial Prophet Model
+Our team created four separate models to see if it could beat Maverik's RMSE benchmarks. After running an Auto-Arima and Naive Bayes model, I pivoted to Prophet.
+
+Developed by Meta, Prophet is an open-source forecasting tool that specializes in time-series data. It's tailored specifically to capture seasonality, shifts in trend and special events. We applied Maverik's day of the week, seasons and holiday seasonality to the model, as well as the target variable's most highly correlated store features.
+
+Prophet performed better on average compared to the other models.  
+![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/115f7dab-cbd6-4827-b165-9c09d02b5877)
+
+# Adding National Unleaded & Diesel Data
+While working on this model, the biggest challenges our team had was in trying to differentiate what we would propose to Maverik from other candidate. Theoretically, every model proposed to Maverik should work showing a prediction for store sales. However, without having specific store data, we would all be challenged in identifying data that is predictive in forecasting store sales.
+
+When analyzing the unleaded sales trend, we see a ramp up in sales at the end of the dataframe. Was this due to bad data? Or is there something to explain this?
+![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/3300044e-2297-46f3-b7da-0185c4ba10f0)
+
+When comparing
