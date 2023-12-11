@@ -1,5 +1,5 @@
 # Maverik: Rolling Forecast Model using Prophet
-This repository outlines the work conducted on the rolling forecast Prophet model for Maverik by the Here for the Cinnabon team. The presentation of this model won first place in the Fall 2023 MSBA Capstone competition. This repository includes exploratory data analysis, the model proposed to Maverik and insights gained from the experience.
+This repository outlines the work conducted on the rolling forecast Prophet model for Maverik by the Here for the Cinnabon team. The presentation of this model won first place in the Fall 2023 Masters of Science in Business Analytics Capstone competition. This repository includes exploratory data analysis, the model proposed to Maverik and insights gained from the experience.
 
 # Business Problem
 Maverick needed an accurate daily forecast of sales KPIs for a new store's first year of sales. Achieving this allows for more effective financial planning and accurate ROI documents. This project would be a success if it is able to yield a better forecast than their current model. Stakeholders measured success by seeing if there were improvements to the benchmark RMSE. 
@@ -82,5 +82,15 @@ The results are a model that produces daily forecasts for each sales metric for 
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/afaea07b-3f9c-46f6-8c98-92b1acae23d1)
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/4a6075c3-ed8b-474e-ba2b-f52c263b0506)
 
-# Conclusion
+# [Presentation of Results](https://github.com/clavitopaz/MaverikProphet/Maverik Revenue Forecast Slides.pdf) 
+We can see that the Prophet Rolling Forecast model beats Maverik's benchmark by an average 73% reduction in prediction error. Adopting this model would result in more accurate predictions, improved supply chain management and more accurate initial ROI estimates.
+![image](https://clavitopaz.github.io/MaverikProphet/results.png)
 
+# Conclusion
+This was an incredible project for the following:
+- Using various modeling techniques to find a solution: Besides Prophet, I also built ARIMA and Naive Bayes model. The rest of the team created ETS, SARIMA and XGBoost models.
+- Research industry trends: For Unleaded and Diesel sales metrics, understanding the market's pricing of prices per gallon was very useful in building a more predictive model.
+- Learning to work in a team: Biva, Roman and Bhoomika are all intelligent, genuine colleagues who have dedicated many hours to ensure deliverables are accurate, of high quality and of material use for Maverik.
+- Coding: Building the rolling forecast involved building dictionaries, creating loops, defining functions and more. I'm very thankful for the coding classes provided to us in the MSBA program and W3 Schools.
+
+I hope you have enjoyed reading this GitHub about the Prophet Rolling Forecast model, the first place winner of the 2023 MSBA Capstone competition. If you have any questions, please feel free to reach out to me at pzarate.c14@gmail.com.
