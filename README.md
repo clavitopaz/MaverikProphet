@@ -46,7 +46,7 @@ The first column for each dataset has a 'count' for each row in the datasets. Th
 
 Store 21980 will also be removed for modeling due to its exceptionally high diesel sales.
 
-# Initial Prophet Model
+# [Team Modeling Assignment - Initial Prophet Model](https://clavitopaz.github.io/MaverikProphet/Team_Model_Final-1.html)
 Our team created four separate models to see if it could beat Maverik's RMSE benchmarks. After running an Auto-Arima and Naive Bayes model, I pivoted to Prophet.
 
 Developed by Meta, Prophet is an open-source forecasting tool that specializes in time-series data. It's tailored specifically to capture seasonality, shifts in trend and special events. We applied Maverik's day of the week, seasons and holiday seasonality to the model, as well as the target variable's most highly correlated store features.
@@ -82,4 +82,5 @@ The results are a model that produces daily forecasts for each sales metric for 
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/afaea07b-3f9c-46f6-8c98-92b1acae23d1)
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/4a6075c3-ed8b-474e-ba2b-f52c263b0506)
 
+# Conclusion
 
