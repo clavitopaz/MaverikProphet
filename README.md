@@ -66,7 +66,7 @@ When comparing this information to national unleaded prices, we do see that ther
 So I added national weekly Unleaded & Diesel prices to the model. The results were very positive, cutting RMSE by 50%.
 ![image](https://clavitopaz.github.io/MaverikProphet/rmsecomparison.png)
 
-# Rolling Forecast Model(https://clavitopaz.github.io/MaverikProphet/prophet_msba_final.ipynb)
+# [Rolling Forecast Model](https://clavitopaz.github.io/MaverikProphet/prophet_msba_final.ipynb)
 After deciding that Prophet was the best performing model, and including national diesel and unleaded prices which reduced Unleaded and Diesel RMSE by 50%, the next step involved engineering the rolling forecast.
 
 The major areas to highlight for the rolling forecast are as follows:
