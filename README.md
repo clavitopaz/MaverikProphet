@@ -67,7 +67,7 @@ When analyzing the unleaded sales trend, we see a ramp up in sales at the end of
 
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/3300044e-2297-46f3-b7da-0185c4ba10f0)
 
-When comparing this information to national unleaded prices, we do see that there was in increase in gas prices in July 2023.
+When comparing this information to national unleaded prices, we do see that there was a steady increase in gas prices.
 
 ![image](https://clavitopaz.github.io/MaverikProphet/unleadedimage.png)
 
