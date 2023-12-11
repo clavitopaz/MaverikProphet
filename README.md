@@ -63,5 +63,21 @@ When analyzing the unleaded sales trend, we see a ramp up in sales at the end of
 When comparing this information to national unleaded prices, we do see that there was in increase in gas prices in July 2023.
 ![image](https://clavitopaz.github.io/MaverikProphet/unleadedimage.png)
 
-So I added national weekly Unleaded & Diesel prices to the model. The results were very positive, cutting RMSE by half.
+So I added national weekly Unleaded & Diesel prices to the model. The results were very positive, cutting RMSE by 50%.
 ![image](https://clavitopaz.github.io/MaverikProphet/rmsecomparison.png)
+
+# Rolling Forecast Model(https://clavitopaz.github.io/MaverikProphet/prophet_msba_final.ipynb)
+After deciding that Prophet was the best performing model, and including national diesel and unleaded prices which reduced Unleaded and Diesel RMSE by 50%, the next step involved engineering the rolling forecast.
+
+The major areas to highlight for the rolling forecast are as follows:
+- Splitting the Data: Whereas in the original model, we split by 30 stores to train and 6 stores to test, for the rolling forecast we are now splitting the data from the beginning of the time series to Day 0 of the 'new store'.
+- Training on New Data: For each loop in the code, we are taking in new daily sales data that is used to re-train the model, creating a less erroneous rolling window of predictions as more data comes in.
+- Computationally Intensive: We are now running a Prophet model on four dataframes (the four sales metrics) and doing so every day for 365 days. This results in a computationally intensive model. On a 16GB Macbook, it took 2140 minutes (almost 21 hours).
+
+The results are a model that produces daily forecasts for each sales metric for a given horizon (365 days) that updates every day on new sales information.
+![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/bcfb0576-dce8-4883-9d5a-fdbc67964bdd)
+![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/2272e47d-5520-4616-bd2b-318c79ad5a02)
+![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/afaea07b-3f9c-46f6-8c98-92b1acae23d1)
+![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/4a6075c3-ed8b-474e-ba2b-f52c263b0506)
+
+
