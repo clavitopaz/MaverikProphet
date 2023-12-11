@@ -63,11 +63,11 @@ Prophet performed better on average compared to the other models.
 # Adding National Unleaded & Diesel Data
 While working on this model, the biggest challenges our team had was in trying to differentiate what we would propose to Maverik from other candidate. Theoretically, every model proposed to Maverik should work showing a prediction for store sales. However, without having specific store data, we would all be challenged in identifying data that is predictive in forecasting store sales.
 
-When analyzing the unleaded sales trend, we see a ramp up in sales at the end of the dataframe. Was this due to bad data? Or is there something to explain this?
+When analyzing the unleaded sales trend, we see a ramp up in sales starting January 2023 with a huge ramp up at the end of the dataframe. Was this due to bad data? Or is there something to explain this?
 
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/3300044e-2297-46f3-b7da-0185c4ba10f0)
 
-When comparing this information to national unleaded prices, we do see that there was a steady increase in gas prices.
+When comparing this information to national unleaded prices, we do see that there was a steady increase in gas prices starting in January 2023.
 
 ![image](https://clavitopaz.github.io/MaverikProphet/unleadedimage.png)
 
