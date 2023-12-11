@@ -14,18 +14,22 @@ We identified the following information in our initial analysis of the dataframe
 **1. Store 21980 Sales**
 
 On average, Store 21980 is showing extremely high diesel sales relative to other stores. We also see that store 22260 has the highest unleaded sales and store 22085 has the highest inside sales. Interestingly, food services sales is very low for all stores and relative to other sales metrics.
+
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/cfbcc3df-6e55-486d-9e37-5a366fd4ae34)
 
 **2. Sales Trends over Time**
    
 In our time-series, Maverik experiences higher diesel and unleaded sales in the Summer. Total food service sales do not experience any seasonality trend - sales remain flat throughout the time series. The sales by month and sales by week charts show similar trends.
+
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/9c1dd2cf-e4bc-405f-8abd-bc44e2f65027)
 
 
 Looking at average sales by day of week, Maverik experiences higher sales on weekdays compared to weekends. Total inside sales and unleaded sales follow an upward trend throughout the week and peak on Friday. Diesel and food service sales remain steady throughout the weekday.
+
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/dc1f97bc-6aad-4e65-9a3f-7a0e4092323f)
 
 Looking at holidays, Diesel sales experience very low sales on Thanksgiving, Christmas Eve, Christmas and New Years holidays. Besides that, there is not much variability in holiday vs non-holiday sales metrics.
+
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/5a64999e-135a-44bc-9684-f0d9ac46afed)
 
 
@@ -34,6 +38,7 @@ Looking at holidays, Diesel sales experience very low sales on Thanksgiving, Chr
 Within the EDA file, there are four correlation plots for each sales metric showing its highest correlation to seven variables in the datasets.
 
 Correlations to highlight: Stores selling pizza to inside sales:
+
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/7054bb21-6581-41c0-89bb-6df00ad2e186)
 
 Overall, every sales metric is positively correlated to each other. The highest correlation is between inside sales and food service sales.
@@ -52,18 +57,22 @@ Our team created four separate models to see if it could beat Maverik's RMSE ben
 Developed by Meta, Prophet is an open-source forecasting tool that specializes in time-series data. It's tailored specifically to capture seasonality, shifts in trend and special events. We applied Maverik's day of the week, seasons and holiday seasonality to the model, as well as the target variable's most highly correlated store features.
 
 Prophet performed better on average compared to the other models.  
+
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/115f7dab-cbd6-4827-b165-9c09d02b5877)
 
 # Adding National Unleaded & Diesel Data
 While working on this model, the biggest challenges our team had was in trying to differentiate what we would propose to Maverik from other candidate. Theoretically, every model proposed to Maverik should work showing a prediction for store sales. However, without having specific store data, we would all be challenged in identifying data that is predictive in forecasting store sales.
 
 When analyzing the unleaded sales trend, we see a ramp up in sales at the end of the dataframe. Was this due to bad data? Or is there something to explain this?
+
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/3300044e-2297-46f3-b7da-0185c4ba10f0)
 
 When comparing this information to national unleaded prices, we do see that there was in increase in gas prices in July 2023.
+
 ![image](https://clavitopaz.github.io/MaverikProphet/unleadedimage.png)
 
 So I added national weekly Unleaded & Diesel prices to the model. The results were very positive, cutting RMSE by 50%.
+
 ![image](https://clavitopaz.github.io/MaverikProphet/rmsecomparison.png)
 
 # [Rolling Forecast Model](https://github.com/clavitopaz/MaverikProphet/blob/main/prophet_msba_final.ipynb) 
@@ -77,6 +86,7 @@ The major areas to highlight for the rolling forecast are as follows:
 - Computationally Intensive: We are now running a Prophet model on four dataframes (the four sales metrics) and doing so every day for 365 days. This results in a computationally intensive model. On a 16GB Macbook, it took 2140 minutes (almost 21 hours).
 
 The results are a model that produces daily forecasts for each sales metric for a given horizon (365 days) that updates every day on new sales information.
+
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/bcfb0576-dce8-4883-9d5a-fdbc67964bdd)
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/2272e47d-5520-4616-bd2b-318c79ad5a02)
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/afaea07b-3f9c-46f6-8c98-92b1acae23d1)
@@ -84,6 +94,7 @@ The results are a model that produces daily forecasts for each sales metric for 
 
 # [Presentation of Results](https://clavitopaz.github.io/MaverikProphet/MaverikSlides.pdf) 
 We can see that the Prophet Rolling Forecast model beats Maverik's benchmark by an average 73% reduction in prediction error. Adopting this model would result in more accurate predictions, improved supply chain management and more accurate initial ROI estimates.
+
 ![image](https://clavitopaz.github.io/MaverikProphet/results.png)
 
 # Conclusion
