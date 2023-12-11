@@ -63,3 +63,5 @@ When analyzing the unleaded sales trend, we see a ramp up in sales at the end of
 When comparing this information to national unleaded prices, we do see that there was in increase in gas prices in July 2023.
 ![image](https://clavitopaz.github.io/MaverikProphet/unleadedimage.png)
 
+So I added national weekly Unleaded & Diesel prices to the model. The results were very positive, cutting RMSE by half.
+![image](https://clavitopaz.github.io/MaverikProphet/rmsecomparison.png)
