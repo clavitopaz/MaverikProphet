@@ -11,10 +11,12 @@ The deliverable is a predictive model that produces daily sales forecasts for ea
 # [Exploratory Data Analysis](https://github.com/clavitopaz/MaverikProphet/blob/main/Final_Maverik_EDA%20(1).ipynb)
 We identified the following information in our initial analysis of the dataframes provided to us by Maverik:
 
-1. On average, Store 21980 is showing extremely high diesel sales relative to other stores. We also see that store 22260 has the highest unleaded sales and store 22085 has the highest inside sales. Interestingly, food services sales is very low for all stores and relative to other sales metrics.
+**1. Store 21980 Sales**
+
+On average, Store 21980 is showing extremely high diesel sales relative to other stores. We also see that store 22260 has the highest unleaded sales and store 22085 has the highest inside sales. Interestingly, food services sales is very low for all stores and relative to other sales metrics.
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/cfbcc3df-6e55-486d-9e37-5a366fd4ae34)
 
-2. Sales Trends over Time
+**2. Sales Trends over Time**
    
 In our time-series, Maverik experiences higher diesel and unleaded sales in the Summer. Total food service sales do not experience any seasonality trend - sales remain flat throughout the time series. The sales by month and sales by week charts show similar trends.
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/9c1dd2cf-e4bc-405f-8abd-bc44e2f65027)
@@ -27,7 +29,7 @@ Looking at holidays, Diesel sales experience very low sales on Thanksgiving, Chr
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/5a64999e-135a-44bc-9684-f0d9ac46afed)
 
 
-3. Sales Correlations
+**3. Sales Correlations**
    
 Within the EDA file, there are four correlation plots for each sales metric showing its highest correlation to seven variables in the datasets.
 
@@ -36,7 +38,7 @@ Correlations to highlight: Stores selling pizza to inside sales:
 
 Overall, every sales metric is positively correlated to each other. The highest correlation is between inside sales and food service sales.
 
-4. Removing features
+**4. Removing Features**
    
 These features can be removed as they only have one data value: Front door, god_father_pizza, Diesel, non-24-hr, self_checkout, car_wash, and ev_charging.
 
