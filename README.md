@@ -60,4 +60,5 @@ While working on this model, the biggest challenges our team had was in trying t
 When analyzing the unleaded sales trend, we see a ramp up in sales at the end of the dataframe. Was this due to bad data? Or is there something to explain this?
 ![image](https://github.com/clavitopaz/MaverikProphet/assets/122945935/3300044e-2297-46f3-b7da-0185c4ba10f0)
 
-When comparing
+When comparing this information to national unleaded prices, we do see that there was in increase in gas prices in July 2023.
+
