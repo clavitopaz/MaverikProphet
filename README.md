@@ -1,5 +1,5 @@
 # Maverik: Rolling Forecast Model using Prophet
-This repository outlines the work conducted on the rolling forecast Prophet model for Maverik by the Here for the Cinnabon team. The presentation of this model won first place in the Fall 2023 Masters of Science in Business Analytics Capstone competition. This repository includes exploratory data analysis, the model proposed to Maverik and insights gained from the experience.
+This repository outlines the work conducted on the rolling forecast Prophet model for Maverik by the Here for the Cinnabon team. The presentation of this model won first place in the Fall 2023 Masters of Science in Business Analytics Capstone competition for the David Eccles School of Business at the University of Utah. This repository includes exploratory data analysis, the model proposed to Maverik and insights gained from the experience.
 
 # Business Problem
 Maverick needed an accurate daily forecast of sales KPIs for a new store's first year of sales. Achieving this allows for more effective financial planning and accurate ROI documents. This project would be a success if it is able to yield a better forecast than their current model. Stakeholders measured success by seeing if there were improvements to the benchmark RMSE. 
@@ -104,4 +104,4 @@ This was an incredible project for the following:
 - Learning to work in a team: Biva, Roman and Bhoomika are all intelligent, genuine colleagues who have dedicated many hours to ensure deliverables are accurate, of high quality and of material use for Maverik.
 - Coding: Building the rolling forecast involved building dictionaries, creating loops, defining functions and more. I'm very thankful for the coding classes provided to us in the MSBA program and W3 Schools.
 
-I hope you have enjoyed reading this GitHub about the Prophet Rolling Forecast model, the first place winner of the 2023 MSBA Capstone competition. If you have any questions, please feel free to reach out to me at pzarate.c14@gmail.com.
+I hope you have enjoyed reading this GitHub about the Prophet Rolling Forecast model, the first place winner of the 2023 MSBA Capstone competition for the David Eccles School of Business at the University of Utah. If you have any questions, please feel free to reach out to me at pzarate.c14@gmail.com.
